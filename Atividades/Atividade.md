@@ -1,1 +1,1 @@
-Atividade feita em sala sobre hyml e css de completar o código
+Atividade feita em sala sobre html e css de completar o código
