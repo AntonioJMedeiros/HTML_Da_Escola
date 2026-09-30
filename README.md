@@ -1,2 +1,2 @@
-#Só as coisa da escola mesmo, atividade e tals
+# Só as coisa da escola mesmo, atividade e tals
 
