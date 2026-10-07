@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Delivery - Aula Prática</title>
+    <link rel="stylesheet" href="Atividade_02.css">
+
+    <!-- ===================================================================
+         INSTRUÇÃO 0: VINCULAÇÃO DO CSS EXTERNO
+         Para conectar este arquivo HTML ao seu arquivo de estilos CSS, usamos a tag <link>.
+         Sintaxe da tag:
+         <link rel="stylesheet" href="NOME_DO_ARQUIVO.css">
+         
+         SUA TAREFA:
+         Escreva a tag <link> apontando para o arquivo "style.css".
+         =================================================================== -->
+    <!-- DIGITE O LINK PARA O CSS ABAIXO: -->
+    
+</head>
+<body>
+
+    <!-- ===================================================================
+         PASSO 1: CABEÇALHO DA PÁGINA (HEADER)
+         O elemento <header> representa o topo da página web.
+         
+         REGRAS DE SINTAXE DAS TAGS:
+         - <h1>: Título principal. Usa-se apenas UM por página.
+                 Sintaxe: <h1>Nome do Restaurante</h1>
+         - <p>: Parágrafo para slogans ou chamadas publicitárias.
+                 Sintaxe: <p>Sua frase de impacto aqui</p>
+         
+         DADOS PARA PREENCHER:
+         - Título H1: Digite o nome da sua lanchonete (Ex: Burguer & Cia)
+         - Parágrafo P: Peça seu lanche sem sair de casa pelo WhatsApp!
+         =================================================================== -->
+    <header>
+        <!-- DIGITE SEU H1 ABAIXO: -->
+       <h1> SaBOR Hambúrger</h1>
+
+        <!-- DIGITE SEU P ABAIXO: -->
+        <p>Parece hambúrguer mas não é!!</p>
+    </header>
+
+
+    <!-- ===================================================================
+         PASSO 2: ÁREA PRINCIPAL DO CONTEÚDO (MAIN)
+         A tag <main> guarda o conteúdo exclusivo e central do site.
+         Usamos a classe "container" para centralizar tudo na tela.
+         
+         REGRAS DE SINTAXE:
+         - <h2>: Título secundário para seções da página.
+                 Sintaxe: <h2>Texto do Título</h2>
+         
+         DADOS PARA PREENCHER:
+         - Título H2: Cardápio em Destaque
+         =================================================================== -->
+    <main class="container">
+
+        <!-- DIGITE SEU H2 ABAIXO: -->
+        <h2>Cardápio em destaque</h2>
+
+
+        <!-- ===============================================================
+             PASSO 3: VITRINE DE PRODUTOS (CARDS DO CARDÁPIO)
+             
+             REGRAS E ESTRUTURA DE CADA TAG DENTRO DO CARD:
+             
+             1. Tag <img> (Imagem):
+                - Não possui fechamento.
+                - Atributo "src": Link público da foto na internet.
+                - Atributo "alt": Descrição da imagem para acessibilidade.
+                Sintaxe: <img src="URL_DA_IMAGEM" alt="DESCRICAO">
+
+             2. Tag <h3> (Nome do Lanche):
+                Sintaxe: <h3>Nome do Produto</h3>
+
+             3. Tag <p> (Descrição dos Ingredientes):
+                Sintaxe: <p>Lista de ingredientes...</p>
+
+             4. Tag <div class="preco"> (Valor do Lanche):
+                Sintaxe: <div class="preco">R$ 00,00</div>
+
+             5. Tag <a class="btn-whatsapp"> (Botão do WhatsApp):
+                - Atributo "href": Link direto do WhatsApp wa.me.
+                - Atributo "target": "_blank" (Abre em uma nova aba do navegador).
+                - Atributo "class": "btn-whatsapp" (Para aplicar a cor verde no CSS).
+                Sintaxe: <a href="URL_WHATSAPP" target="_blank" class="btn-whatsapp">TEXTO DO BOTAO</a>
+             =============================================================== -->
+        <div class="grid-produtos">
+
+            <!-- -----------------------------------------------------------
+                 PRODUTO 1: MONSTER BURGUER
+                 
+                 COPIE OS DADOS ABAIXO PARA AS TAGS CORRESPONDENTES:
+                 - Imagem src: https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400
+                 - Imagem alt: Hambúrguer Artesanal Monster Burguer
+                 - Título h3: Monster Burguer
+                 - Descrição p: Pão brioche, 2 hambúrgueres 150g, bastante queijo cheddar e molho da casa.
+                 - Preço div: R$ 32,90
+                 - Link href do WhatsApp: https://wa.me/5548999999999?text=Gostaria%20de%20pedir%20um%20Monster%20Burguer
+                 - Texto do botão: 📱 Pedir no WhatsApp
+                 ----------------------------------------------------------- -->
+            <div class="card-produto">
+                <!-- DIGITE A TAG IMG DO PRODUTO 1 ABAIXO: -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbU8Zb6Ubh3mGKID3t_lmWXKMyhIVBSdJbS0or0mTYg&s=10">
+
+                <!-- DIGITE O TÍTULO H3 DO PRODUTO 1 ABAIXO: -->
+                <h3>SaBOR pizza</h3>
+                <h4 class="subtitulo">Uma pizza com hamburguer, a questão não é "Porque?" mas sim "Porque não?"</h4>
+
+                <!-- DIGITE A DESCRIÇÃO P DO PRODUTO 1 ABAIXO: -->
+                <p>Contém: Morte, dor, sofrimento, agonia e lamentos.</p>
+
+                <!-- DIGITE A DIV DE PREÇO DO PRODUTO 1 ABAIXO: -->
+                <div class="preco">Preço: R$32,90</div>
+
+                <!-- DIGITE O BOTÃO LINK DO WHATSAPP ABAIXO: -->
+                 <button class="btn-whatsapp" href="https://wa.me/5548999999999?text=Gostaria%20de%20pedir%20uma%20Pizza%20Calabresa">📱 Pedir no WhatsApp</button>
+            </div>
+
+
+            <!-- -----------------------------------------------------------
+                 PRODUTO 2: PIZZA CALABRESA
+                 
+                 COPIE OS DADOS ABAIXO PARA AS TAGS CORRESPONDENTES:
+                 - Imagem src: https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400
+                 - Imagem alt: Pizza de Calabresa Especial
+                 - Título h3: Pizza Calabresa
+                 - Descrição p: Massa artesanal, molho de tomate caseiro, mussarela, calabresa e orégano.
+                 - Preço div: R$ 45,00
+                 - Link href do WhatsApp: https://wa.me/5548999999999?text=Gostaria%20de%20pedir%20uma%20Pizza%20Calabresa
+                 - Texto do botão: 📱 Pedir no WhatsApp
+                 ----------------------------------------------------------- -->
+            <div class="card-produto">
+                <!-- DIGITE A TAG IMG DO PRODUTO 2 ABAIXO: -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrjza2Vfh_onSw9Xoda8jAIUuBVTuFVSyLBBdD0oy2nA&s=10">
+
+                <!-- DIGITE O TÍTULO H3 DO PRODUTO 2 ABAIXO: -->
+                <h3>Sopa de hambúrguer</h3>
+                <h4 class="subtitulo">Pra quando estiver aquele frio e você quer uma sopinha, porque não comer um hamburguer junto?</h4>
+
+                <!-- DIGITE A DESCRIÇÃO P DO PRODUTO 2 ABAIXO: -->
+                <p> Contém: Cebola, queijo, picanha, coração de sapo, alfaçe, cebola, fonte de toda dor e sofrimento.</p>
+
+                <!-- DIGITE A DIV DE PREÇO DO PRODUTO 2 ABAIXO: -->
+                <div class="preco">Preço: R$45,00</div>
+                
+                <!-- DIGITE O BOTÃO LINK DO WHATSAPP ABAIXO: -->
+                <button class="btn-whatsapp" href="https://www.google.com/goto?url=CAESYwHrOzAVTp8v5dWFPtsjs32co5WHXm2-QwDrzfnpFCoxrJd2LtR6Xa5-4Cpujqi_04MnBZwNzfqlFTjIuzNrdpGyVfB3ZeSvn6O_U8XCGW5ciXvhVldXIccVTuQbcUkdsHNVgQ">📱 Pedir no WhatsApp</button>
+            </div>
+            <div class="card-produto">
+                <!-- DIGITE A TAG IMG DO PRODUTO 1 ABAIXO: -->
+                <img src="https://g1.globo.com/Noticias/PlanetaBizarro/foto/0,,20079794-FMM,00.jpg">
+
+                <!-- DIGITE O TÍTULO H3 DO PRODUTO 1 ABAIXO: -->
+                <h3>Dormindo no saBOR</h3>
+                <h4 class="subtitulo">Não durma nesse lanche delicioso! Ganhe um hamburguer e uma noite no SaBOR hambúrguer!</h4>
+
+                <!-- DIGITE A DESCRIÇÃO P DO PRODUTO 1 ABAIXO: -->
+                <p>Contém: picles, picanha, queijo, maionese, feijão, almas penadas e alfaçe.</p>
+
+                <!-- DIGITE A DIV DE PREÇO DO PRODUTO 1 ABAIXO: -->
+                <div class="preco">Preço: R$24,99</div>
+
+                <!-- DIGITE O BOTÃO LINK DO WHATSAPP ABAIXO: -->
+                 <button class="btn-whatsapp" href="https://wa.me/5548999999999?text=Gostaria%20de%20pedir%20uma%20Pizza%20Calabresa">📱 Pedir no WhatsApp</button>
+            </div>
+              <div class="card-produto">
+                <!-- DIGITE A TAG IMG DO PRODUTO 1 ABAIXO: -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR22hjmFnp7OnEJeg_BtqXhiKd5JYJQ8jt21jCeGyqmPg&s=10g">
+
+                <!-- DIGITE O TÍTULO H3 DO PRODUTO 1 ABAIXO: -->
+                <h4><s>MC lanche feliz</s></h4><h3>SaBor presente</h3>
+                <h4 class="subtitulo">Compre um hambúrguer <s>com carne de procedencia estranha</s> e ganhe um presente junto!</h4>
+
+                <!-- DIGITE A DESCRIÇÃO P DO PRODUTO 1 ABAIXO: -->
+                <p>Contém: picles, picanha, queijo, maionese, feijão, miopia.
+                </p>
+                <p>Presente pode causar dor extrema e possessão, risco por conta do cliente.</p>
+
+                <!-- DIGITE A DIV DE PREÇO DO PRODUTO 1 ABAIXO: -->
+                <div class="preco">Preço: R$106,99</div>
+
+                <!-- DIGITE O BOTÃO LINK DO WHATSAPP ABAIXO: -->
+                 <button class="btn-whatsapp" href="https://wa.me/5548999999999?text=Gostaria%20de%20pedir%20uma%20Pizza%20Calabresa">📱 Pedir no WhatsApp</button>
+            </div>
+
+
+        </div><!-- Fim da grid-produtos -->
+    </main>
+
+
+    <!-- ===================================================================
+         PASSO 4: RODAPÉ DO SITE (FOOTER) E REDES SOCIAIS
+         O elemento <footer> fica fixado no fim do conteúdo.
+         
+         DADOS E SINTAXE PARA PREENCHER:
+         1. Título H3: Siga nossas Redes Sociais
+         2. Link do Instagram:
+            - Tag: <a>
+            - href: "https://instagram.com"
+            - target: "_blank"
+            - class: "btn-social btn-instagram"
+            - Texto do link: Instagram
+         3. Link do Facebook:
+            - Tag: <a>
+            - href: "https://facebook.com"
+            - target: "_blank"
+            - class: "btn-social btn-facebook"
+            - Texto do link: Facebook
+         =================================================================== -->
+    <footer>
+        <!-- DIGITE SEU H3 ABAIXO: -->
+        <h3>Sigas nossas redes sociais!!!</h3>
+
+        <div class="redes-sociais">
+            <!-- DIGITE O LINK DO INSTAGRAM ABAIXO: -->
+            <a class="btn-social btn-instagram" href="https://www.google.com/goto?url=CAESYwHrOzAVTp8v5dWFPtsjs32co5WHXm2-QwDrzfnpFCoxrJd2LtR6Xa5-4Cpujqi_04MnBZwNzfqlFTjIuzNrdpGyVfB3ZeSvn6O_U8XCGW5ciXvhVldXIccVTuQbcUkdsHNVgQ" target="_blank">Instagram</a>
+
+            <!-- DIGITE O LINK DO FACEBOOK ABAIXO: -->
+            <a class="btn-social btn-facebook" href="https://www.google.com/goto?url=CAESYwHrOzAVTp8v5dWFPtsjs32co5WHXm2-QwDrzfnpFCoxrJd2LtR6Xa5-4Cpujqi_04MnBZwNzfqlFTjIuzNrdpGyVfB3ZeSvn6O_U8XCGW5ciXvhVldXIccVTuQbcUkdsHNVgQ" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+</body>
+</html>
